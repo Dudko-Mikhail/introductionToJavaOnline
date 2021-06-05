@@ -11,9 +11,9 @@ public class Task3 {
 
         System.out.print("N = ");
         int n = in.nextInt();
-        int[] array = new int[n];
+        double[] array = new double[n];
         for (int i = 0; i < array.length; i++) {
-            array[i] = in.nextInt();
+            array[i] = in.nextDouble();
         }
         in.close();
 

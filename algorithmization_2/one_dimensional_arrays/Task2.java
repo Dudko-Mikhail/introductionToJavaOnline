@@ -15,12 +15,12 @@ public class Task2 {
             System.out.println("Incorrect input");
             System.exit(1);
         }
-        int[] sequence = new int[n];
+        double[] sequence = new double[n];
         for (int i = 0; i < sequence.length; i++) {
-            sequence[i] = in.nextInt();
+            sequence[i] = in.nextDouble();
         }
         System.out.print("Z = ");
-        int z = in.nextInt();
+        double z = in.nextDouble();
         in.close();
 
         int count = 0;
