@@ -1,3 +1,5 @@
+package branching;
+
 import java.util.Scanner;
 
 /*

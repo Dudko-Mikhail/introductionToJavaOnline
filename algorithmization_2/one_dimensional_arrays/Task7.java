@@ -1,3 +1,5 @@
+package one_dimensional_arrays;
+
 import java.util.Scanner;
 
 /*
