@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 /*
-    7. Даны действительные числа a1, a2, ..., an. Найти max(a1+an, a2+a(n-1), ...).
+    7. Даны действительные числа a1, a2, ..., a2n. Найти max(a1+a2n, a2+a(2n-1), ..., an+a(n+1)).
 */
 
 public class Task7 {
@@ -10,7 +10,7 @@ public class Task7 {
 
         System.out.print("n = ");
         int n = in.nextInt();
-        double[] array = new double[n];
+        double[] array = new double[2 * n];
 
         for (int i = 0; i < array.length; i++) {
             array[i] = in.nextDouble();
