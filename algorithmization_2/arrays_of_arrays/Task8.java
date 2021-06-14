@@ -26,13 +26,13 @@ public class Task8 {
         System.out.print("Введите номер первого столбца[1-" + columns + "]: ");
         int first = in.nextInt();
         if (first > columns || first <= 0) {
-            System.out.println("first > columns");
+            System.out.println("Некорректные данные (номер первого столбца)");
             return;
         }
         System.out.print("Введите номер второго столбца[1-" + columns + "]: ");
         int second = in.nextInt();
         if (second > columns || second <= 0) {
-            System.out.println("second > columns");
+            System.out.println("Некорректные данные (номер второго столбца)");
             return;
         }
         in.close();
