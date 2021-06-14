@@ -16,19 +16,21 @@ public class Task3 {
         int [][] matrix = new int[rows][columns];
         for (int i = 0; i < matrix.length; i++) {
             for (int j = 0; j < matrix[i].length; j++) {
+                System.out.print("[" + i + "]" + "[" + j + "] = ");
                 matrix[i][j] = in.nextInt();
             }
+            System.out.println();
         }
-        System.out.print("k = ");
+        System.out.print("Введите k[1-" + rows + "]: ");
         int k = in.nextInt();
-        if (k > rows) {
-            System.out.println("k > rows");
+        if (k > rows || k <= 0) {
+            System.out.println("Некорректные данные (число k)");
             return;
         }
-        System.out.print("p = ");
+        System.out.print("Введите p[1-" + columns + "]: ");
         int p = in.nextInt();
-        if (p > columns) {
-            System.out.println("p > columns");
+        if (p > columns || p <= 0) {
+            System.out.println("Некорректные данные (число p)");
             return;
         }
         in.close();
